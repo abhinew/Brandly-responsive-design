@@ -1,7 +1,6 @@
-.content {
-	margin: 0 auto;
-	width: 960px;
-}
+@import "bootstrap";
+
+
 .title {
 	font-weight: normal;
 	font-style: italic;
@@ -14,7 +13,7 @@ body {
 		background-image: url("../images/header-bg.png");
 		background-size: cover;
 		background-repeat: no-repeat;
-		.content {
+
 
 
 
@@ -66,18 +65,19 @@ body {
 				  }
 			  }
 			}
-		}
+
 	}
 	.latest-products {
-		.content {
-			text-align: center;
 
-			div {
-				display: inline-block;
-				margin: 5px;
-				height: 260px;
+			.row {
+				div {
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			.product-1, .product-2, .product-3 {
 				position: relative;
-
+				height: 260px;
 				.view-products {
 					color: #fff;
 					position: absolute;
@@ -90,12 +90,14 @@ body {
 				}
 			}
 			.product-1, .product-2, .product-3 {
-				width: 250px;
+
 				outline: 1px solid white;
  				outline-offset: -15px;
+
 			}
+
 			.product-4, .product-5 {
-				width: 380px;
+				height: 260px;
 			}
 			.product-1 {
 				background-image: url("../images/men.png");
@@ -112,23 +114,20 @@ body {
 			.product-5 {
 				background-image: url("../images/mega-sale.png");
 			}
-		}
+
 	}
 	.trending-items {
 		background-image: url("../images/trending-bg.png");
 		background-size: cover;
-		.content {
-			.jacket, .item-container {
-				float: left;
-			}
+
+
 			.jacket {
-				width: 301px;
+				background-image: url("../images/jacket.png");
+				height: 300px;
 			}
 
-			}
-			.item-container {
-				width: 500px;
-				margin-left: 20px;
+
+
 				h4 {
 					text-transform: uppercase;
 					color: #dc0000;
@@ -141,7 +140,7 @@ body {
 					width: 30px;
 					display: inline-block;
 				}
-			}
+
 			&:after {
 				clear: both;
 				content: " ";
